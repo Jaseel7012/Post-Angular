@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule,Routes } from '@angular/router';
 
@@ -25,7 +26,8 @@ const myroute:any=[
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,RouterModule.forRoot(myroute)
+    AppRoutingModule,RouterModule.forRoot(myroute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
