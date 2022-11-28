@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./post-app-add.component.css']
 })
 export class PostAppAddComponent {
+  userId=""
+  id=""
+  title=""
+  body=""
+  view=()=>{
+    let data:any={
+      "userId": this.userId,
+      "id": this.id,
+      "title": this.title,
+      "body": this.body
+    }
+    console.log(data)
+
+  }
+
+
+  
 
 }
