@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostAppAddComponent } from './post-app-add/post-app-add.component';
 import { PostViewComponent } from './post-view/post-view.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import {HttpClientModule} from '@angular/common/http'
 const myroute:any=[
   {
     path:'',
@@ -22,12 +24,14 @@ const myroute:any=[
   declarations: [
     AppComponent,
     PostAppAddComponent,
-    PostViewComponent
+    PostViewComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,RouterModule.forRoot(myroute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
